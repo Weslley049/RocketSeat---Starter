@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de valores</title>
+</head>
+<body>
+    <div id="result">
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+
+    <script>
+        var nomes = ["Diego","Gabriel","Lucas"]
+        var lista = document.getElementById("lista")
+        for (nome in nomes){
+            var novoNome = document.createElement('li')
+            novoNome.innerText = nomes[nome]
+            lista.appendChild(novoNome)
+        }
+
+
+    </script>
+</body>
+</html>

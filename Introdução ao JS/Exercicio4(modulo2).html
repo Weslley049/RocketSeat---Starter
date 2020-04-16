@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de valores</title>
+</head>
+<body>
+    <div id="space">
+        <input type="text" name="Nome" value="Digite um nome" id="nome">
+        <button onClick="adicionar()">Adicionar</button>
+    </div>
+    
+    <div id="result">
+        <ul id="lista">
+        
+        </ul>
+    </div>
+
+
+    <script>
+        var nomes = ["Diego","Gabriel","Lucas"]
+        var lista = document.getElementById("lista")
+        for (nome in nomes){
+            var novoNome = document.createElement('li')
+            novoNome.innerText = nomes[nome]
+            lista.appendChild(novoNome)
+            }
+        function adicionar(){
+            var newName = document.getElementById('nome').value
+            window.alert(newName)
+      
+
+                nomes.push(newName)
+                printnovoNome(newName)
+        }
+        
+        
+        function printnovoNome(nome){
+            var novoElemento = document.createElement('li')
+            novoElemento.innerText = nome
+            lista.appendChild(novoElemento)
+
+        }
+        
+       
+
+
+    </script>
+</body>
+</html>

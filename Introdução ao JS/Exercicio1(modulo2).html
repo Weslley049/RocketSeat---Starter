@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1(modulo2)</title>
+
+    <style>
+        #result{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="botao">Clique em mim</button>
+    <div id="result">
+    
+    </div>
+   
+   
+   <script>
+      var btn = document.getElementById('botao')
+       
+      btn.onclick = function(){
+          var element = document.createElement('div');
+          element.style.width = 100;
+          element.style.height = 100;
+          element.style.backgroundColor = '#f00'
+          element.innerText = "APARECE"
+          var containerelement = document.getElementById('result')
+          containerelement.appendChild(element)
+          
+     
+          /*var linkElement = document.createElement('a')
+          linkElement.setAttribute('href','https://www.google.com/')
+          var textElement = document.createTextNode("Acessar o site da google")
+          linkElement.appendChild(textElement);
+          var containerelement = document.getElementById('result')
+          containerelement.appendChild(linkElement)*/
+
+      }
+       
+    </script>
+
+</body>
+</html>
