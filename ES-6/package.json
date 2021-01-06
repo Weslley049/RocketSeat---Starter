@@ -21,6 +21,6 @@
     "dev1": "babel ./exercicio1.js -o bundle1.js -w"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }
